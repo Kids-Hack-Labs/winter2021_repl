@@ -31,8 +31,8 @@ class SceneManager():
             if scene_type not in SceneManager.instance.SCENE_TYPES:
                 raise ValueError("Unknown scene type")
             elif scene_type == SceneManager.instance.SCENE_TYPES[0]:
-                #TODO: CHANGE FOR WEEK 09 ON...
-                return (self.question_data[0], self.layout_data)
+                temp = {"question":"QUIZ START","next":"NEXT"}
+                return (temp, self.layout_data[scene_type])
             elif scene_type == SceneManager.instance.SCENE_TYPES[1]:
                 if index >= len(self.question_data):
                     raise IndexError("Question line index out of range")
@@ -44,11 +44,11 @@ class SceneManager():
                             "answer4"   :self.question_data[index][4],
                             "timer"     :int(self.question_data[index][5])*1000,
                             "correct"   :int(self.question_data[index][6]),
-                            "next":"next"
+                            "next"      :"NEXT"
                            }
                     return(temp, self.layout_data[scene_type])
             else:
-                return({}, self.layout_data[scene_type])
+                return({"question":"END"}, self.layout_data[scene_type])
 
         def next_scene(self):
             if SceneManager.instance.current_scene_index < len(self.question_data):
@@ -56,7 +56,7 @@ class SceneManager():
                 return self.request_scene_data(SceneManager.instance.current_scene_index-1,
                                                SceneManager.instance.SCENE_TYPES[1])
             else:
-                return self.request_scene_data(0, SceneManager.instance.SCENE_TYPES[2])
+                return self.request_scene_data({}, SceneManager.instance.SCENE_TYPES[2])
 
     def __init__(self):
         if not SceneManager.instance:

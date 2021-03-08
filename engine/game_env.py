@@ -62,6 +62,11 @@ class Game():
         def quit(self):
             self.is_run = False
 
+        def request_next_scene(self):
+            temp = SceneManager.instance.next_scene()
+            self.scene = Scene(temp[0], temp[1])
+            
+
     #Singleton:
     instance = None
     def __init__(self, cfg_info):

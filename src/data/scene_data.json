@@ -1,3 +1,110 @@
 {
-    "background":[200, 200, 200]
+    "TITLE":{
+        "background":[200, 200, 200],
+        "font_params":{
+            "question":{
+                "name":"comicsansms",
+                "size":50,
+                "colour":[0, 0, 0]
+            },
+            "buttons":{
+                "name":"",
+                "size":0,
+                "colour":[0, 0, 0]
+            }
+        },
+        "button_params":{
+            "next":{
+                "rect"  :[0,0,0,0],
+                "out"   :[0,0,0],
+                "hover" :[0,0,0],
+                "down"  :[0,0,0],
+                "up"    :[0,0,0]
+            }
+        }
+    },
+    "QUESTIONS":{
+        "background":[0,0,0],
+        "font_params":{
+            "question":{
+                "name":"",
+                "size":0,
+                "colour":[0,0,0]
+            },
+            "buttons":{
+                "name":"",
+                "size":0,
+                "colour":[0,0,0]
+            },
+            "timer":{
+                "name":"",
+                "size":0,
+                "colour":[0,0,0]
+            },
+            "score":{
+                "name":"",
+                "size":0,
+                "colour":[0,0,0]
+            }
+        },
+        "button_params":{
+            "next":{
+                "rect"  :[0,0,0,0],
+                "out"   :[0,0,0],
+                "hover" :[0,0,0],
+                "down"  :[0,0,0],
+                "up"    :[0,0,0]
+            },
+            "answer1":{
+                "rect"  :[0,0,0,0],
+                "out"   :[0,0,0],
+                "hover" :[0,0,0],
+                "down"  :[0,0,0],
+                "up"    :[0,0,0]
+            },
+            "answer2":{
+                "rect"  :[0,0,0,0],
+                "out"   :[0,0,0],
+                "hover" :[0,0,0],
+                "down"  :[0,0,0],
+                "up"    :[0,0,0]
+            },
+            "answer3":{
+                "rect"  :[0,0,0,0],
+                "out"   :[0,0,0],
+                "hover" :[0,0,0],
+                "down"  :[0,0,0],
+                "up"    :[0,0,0]
+            },
+            "answer4":{
+                "rect"  :[0,0,0,0],
+                "out"   :[0,0,0],
+                "hover" :[0,0,0],
+                "down"  :[0,0,0],
+                "up"    :[0,0,0]
+            }
+        }
+    },
+    "END":{
+        "background":[0,0,0],
+        "font_params":{
+            "question":{
+                "name":"0",
+                "size":0,
+                "colour":[0,0,0]
+            },
+            "buttons":{
+                "name":"0",
+                "size":0,
+                "colour":[0,0,0]
+            },
+            "score":{
+                "name":"",
+                "size":0,
+                "colour":[0,0,0]
+            }
+        },
+        "button_params":{
+        }
+    }
 }
