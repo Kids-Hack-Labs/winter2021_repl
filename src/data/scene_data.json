@@ -89,12 +89,12 @@
         "background":[0,0,0],
         "font_params":{
             "question":{
-                "name":"0",
+                "name":"",
                 "size":0,
                 "colour":[0,0,0]
             },
             "buttons":{
-                "name":"0",
+                "name":"",
                 "size":0,
                 "colour":[0,0,0]
             },
