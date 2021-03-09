@@ -25,6 +25,9 @@
     },
     "QUESTIONS":{
         "background":[0,0,0],
+        "answer_background":[0, 0, 0],
+        "score_pos":[0,0],
+        "timer_pos":[0,0],
         "font_params":{
             "question":{
                 "name":"",
@@ -87,6 +90,7 @@
     },
     "END":{
         "background":[0,0,0],
+        "score_pos":[0,0],
         "font_params":{
             "question":{
                 "name":"",
