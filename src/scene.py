@@ -9,19 +9,33 @@ class Scene():
                                                          scene_info["font_params"]["question"],
                                                          self.bg_colour)
         self.question_rect = self.question_surf.get_rect()
+        temp = {"next"      :self.next_scene,
+                "answer1"   :self.answer1,
+                "answer2"   :self.answer2,
+                "answer3"   :self.answer3,
+                "answer4"   :self.answer4}
         self.buttons = {}
+        if scene_info.get("button_params"):
+            self.buttons = {key:Button(text_info[key],
+                                       scene_info["font_params"]["buttons"],
+                                       scene_info["button_params"][key], temp[key])
+                            for key in scene_info.get("button_params").keys()}
 
     def update(self, delta):
-        pass
-    
+        for name in self.buttons.keys():
+            self.buttons[name].update(delta)
+
     def render(self, target):
         target.fill(self.bg_colour)
         self.question_rect.center = (target.get_rect().centerx, self.question_rect.height)
         target.blit(self.question_surf, self.question_rect)
+        for name in self.buttons.keys():
+            self.buttons[name].render(target)
 
     def next_scene(self):
-        pass
-    
+        from engine.game_env import Game
+        Game.instance.request_next_scene()
+
     def answer1(self):
         pass
 
@@ -32,4 +46,7 @@ class Scene():
         pass
 
     def answer4(self):
+        pass
+
+    def answer(self, num):
         pass
