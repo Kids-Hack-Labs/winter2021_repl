@@ -48,7 +48,7 @@ class SceneManager():
                            }
                     return(temp, self.layout_data[scene_type])
             else:
-                return({"question":"END"}, self.layout_data[scene_type])
+                return({"question":"Final Score:"}, self.layout_data[scene_type])
 
         def next_scene(self):
             if SceneManager.instance.current_scene_index < len(self.question_data):
