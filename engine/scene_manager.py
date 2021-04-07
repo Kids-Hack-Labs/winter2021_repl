@@ -31,7 +31,7 @@ class SceneManager():
             if scene_type not in SceneManager.instance.SCENE_TYPES:
                 raise ValueError("Unknown scene type")
             elif scene_type == SceneManager.instance.SCENE_TYPES[0]:
-                temp = {"question":"QUIZ START","next":"NEXT"}
+                temp = {"question":"QUIZ","next":"NEXT"}
                 return (temp, self.layout_data[scene_type])
             elif scene_type == SceneManager.instance.SCENE_TYPES[1]:
                 if index >= len(self.question_data):
@@ -48,7 +48,7 @@ class SceneManager():
                            }
                     return(temp, self.layout_data[scene_type])
             else:
-                return({"question":"Final Score:"}, self.layout_data[scene_type])
+                return({"question":"FINAL SCORE:"}, self.layout_data[scene_type])
 
         def next_scene(self):
             if SceneManager.instance.current_scene_index < len(self.question_data):

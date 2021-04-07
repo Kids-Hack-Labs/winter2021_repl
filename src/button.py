@@ -46,7 +46,7 @@ class Button():
 
     def deactivate(self):
         self.active = False
-        self.current_state = Button.STATES[4] #UP
+        self.current_state = Button.STATES[4]
 
     def set_correct(self):
-        self.previous_state = self.current_state = Button.STATES[1] #OUT
+        self.current_state = Button.STATES[1]

@@ -1,111 +1,111 @@
 {
     "TITLE":{
-        "background":[200, 200, 200],
+        "background":[200,200,200],
         "font_params":{
             "question":{
-                "name":"comicsansms",
+                "name":"consolas",
                 "size":50,
-                "colour":[0, 0, 0]
+                "colour":[  0,  0,100]
             },
             "buttons":{
-                "name":"",
-                "size":0,
-                "colour":[0, 0, 0]
+                "name":"comicsansms",
+                "size":40,
+                "colour":[ 63,  0,127]
             }
         },
         "button_params":{
             "next":{
-                "rect"  :[0,0,0,0],
-                "out"   :[0,0,0],
-                "hover" :[0,0,0],
-                "down"  :[0,0,0],
-                "up"    :[0,0,0]
+                "rect"  :[325,200,150, 70],
+                "out"   :[120, 50,150],
+                "hover" :[150, 75,175],
+                "down"  :[ 75, 25,100],
+                "up"    :[ 50, 50, 50]
             }
         }
     },
     "QUESTIONS":{
-        "background":[0,0,0],
-        "answer_background":[0, 0, 0],
-        "score_pos":[0,0],
-        "timer_pos":[0,0],
+        "background":[222,222,222],
+        "answer_background":[255,255,255],
+        "score_pos":[400,150],
+        "timer_pos":[150,100],
         "font_params":{
             "question":{
-                "name":"",
-                "size":0,
-                "colour":[0,0,0]
+                "name":"couriernew",
+                "size":50,
+                "colour":[  0,  0,100]
             },
             "buttons":{
-                "name":"",
-                "size":0,
-                "colour":[0,0,0]
-            },
-            "timer":{
-                "name":"",
-                "size":0,
-                "colour":[0,0,0]
+                "name":"comicsansms",
+                "size":40,
+                "colour":[63, 0, 127]
             },
             "score":{
-                "name":"",
-                "size":0,
-                "colour":[0,0,0]
+                "name":"timesnewroman",
+                "size":50,
+                "colour":[63, 0, 127]
+            },
+            "timer":{
+                "name":"candara",
+                "size":40,
+                "colour":[63, 0, 127]
             }
         },
         "button_params":{
             "next":{
-                "rect"  :[0,0,0,0],
-                "out"   :[0,0,0],
-                "hover" :[0,0,0],
-                "down"  :[0,0,0],
-                "up"    :[0,0,0]
+                "rect"  :[625,100,150, 70],
+                "out"   :[120, 50,150],
+                "hover" :[150, 75,175],
+                "down"  :[ 75, 25,100],
+                "up"    :[ 50, 50, 50]
             },
             "answer1":{
-                "rect"  :[0,0,0,0],
-                "out"   :[0,0,0],
-                "hover" :[0,0,0],
-                "down"  :[0,0,0],
-                "up"    :[0,0,0]
+                "rect"  :[ 10,230,380,100],
+                "out"   :[  0,150,150],
+                "hover" :[100,175,175],
+                "down"  :[ 75,125,100],
+                "up"    :[220,255,255]
             },
             "answer2":{
-                "rect"  :[0,0,0,0],
-                "out"   :[0,0,0],
-                "hover" :[0,0,0],
-                "down"  :[0,0,0],
-                "up"    :[0,0,0]
+                "rect"  :[410,230,380,100],
+                "out"   :[150,  0,150],
+                "hover" :[175,100,175],
+                "down"  :[100, 75,125],
+                "up"    :[255,220,255]
             },
             "answer3":{
-                "rect"  :[0,0,0,0],
-                "out"   :[0,0,0],
-                "hover" :[0,0,0],
-                "down"  :[0,0,0],
-                "up"    :[0,0,0]
+                "rect"  :[ 10,340,380,100],
+                "out"   :[150,150,  0],
+                "hover" :[175,175,100],
+                "down"  :[100,125, 75],
+                "up"    :[255,255,220]
             },
             "answer4":{
-                "rect"  :[0,0,0,0],
-                "out"   :[0,0,0],
-                "hover" :[0,0,0],
-                "down"  :[0,0,0],
-                "up"    :[0,0,0]
+                "rect"  :[410,340,380,100],
+                "out"   :[220, 50, 50],
+                "hover" :[255,175,155],
+                "down"  :[200, 25, 50],
+                "up"    :[255,200,200]
             }
         }
     },
     "END":{
-        "background":[0,0,0],
-        "score_pos":[0,0],
+        "background":[222,222,222],
+        "score_pos":[400,225],
         "font_params":{
             "question":{
-                "name":"",
-                "size":0,
-                "colour":[0,0,0]
+                "name":"consolas",
+                "size":50,
+                "colour":[0, 0, 100]
             },
             "buttons":{
-                "name":"",
-                "size":0,
-                "colour":[0,0,0]
+                "name":"comicsansms",
+                "size":40,
+                "colour":[ 63,  0, 127]
             },
             "score":{
-                "name":"",
-                "size":0,
-                "colour":[0,0,0]
+                "name":"timesnewroman",
+                "size":140,
+                "colour":[ 63,  0, 127]
             }
         },
         "button_params":{
